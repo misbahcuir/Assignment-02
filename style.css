@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/* Header Section */
+header{
+    height: 100vh;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(45, 45, 45, 1), rgb(17, 17, 17) 100%);
+}
+nav{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo h3{
+    font-size: 36px;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 40px;
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+}
+.menu > div{
+    background-color: transparent;
+    transition-duration: 0.3s;
+}
+.menu > div :hover {
+    border-radius: 46px;
+    background-color: rgb(230, 83, 60);
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 20px;
+}
+.toggle{
+    display: none;
+}
+.hero{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.hero-text{
+    margin-top: 10vh;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.hero-title{
+    font-size: 78px;
+    font-weight: 900;
+    color: #ffff;
+    line-height: 100%;
+}
+.hero-title span{
+    font-family: 'Miama', sans-serif;
+    font-size: 140px;
+    font-weight: 400;
+}
+.hero-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.hero-btn{
+    display: flex;
+    gap: 14px;
+}
+.hero-btn-1{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: 2px solid rgb(230, 83, 60);
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.hero-btn-1:hover{
+    background: transparent;
+    border: 2px solid #ffff;
+}
+.hero-btn-2{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    background: transparent;
+    border: 2px solid #ffff;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.hero-btn-2:hover{
+    background: rgb(230, 83, 60);
+    border: 2px solid rgb(230, 83, 60);
+}
+.hero-img{
+    height: 80vh;
+    width: 100%;
+    background: url('./images/Images\ 2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.hero-point-1{
+    position: absolute;
+    width: 193px;
+    height: 98px;
+    left: 1107px;
+    top: 260px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 17px 24px;
+}
+.hero-point-1 h2{
+    text-align: left;
+    color: #ffff;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+}
+.hero-point-1 p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.65);
+}
+.hero-point-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    width: 206px;
+    height: 96px;
+    left: 50%;
+    top: 556px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+.hero-point-2 h2{
+    color: #ffff;
+    font-size: 24px;
+    font-weight: 900;
+}
+.hero-point-2 p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* Header Mobile Version */
+@media screen and (max-width: 576px) {
+    .container{
+        width: 90%;
+    }
+    header{
+        height: 156vh;
+    }
+    .menu{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 140vh;
+    }
+    .hero-img{
+        height: 500px;
+        width: 100%;
+        background-position: center right;
+    }
+    .hero-text{
+        width: 100%;
+        margin-top: 0;
+    }
+    .hero-title{
+        font-size: 48px;
+        font-weight: 900;
+        width: 280px;
+    }
+    .hero-text p{
+        width: 280px;
+    }
+    .hero-title span{
+        font-size: 46px;
+        font-weight: 400;
+    }
+    .hero-btn-1, .hero-btn-2{
+        width: 180px;
+    }
+    .hero-point-1{
+        position: relative;
+        left: 65%;
+        top: 10%;
+        width: 145.91px;
+        height: 74.09px;
+    }
+    .hero-point-2{
+        position: relative;
+        left: 0;
+        top: 40%;
+        width: 145.91px;
+        height: 74.09px;
+    }
+    .hero-point-1 h2{
+        font-size: 30px;
+        line-height: 30.24px;
+    }
+    .hero-point-1 p{
+        font-size: 9px;
+    }
+    .hero-point-2 h2{
+        font-size: 18.14px;
+        font-weight: 900;
+        
+    }
+    .hero-point-2 p{
+        line-height: 18.14px;
+    }
+  }
+
+/* Habit Section */
+.habit-section {
+    background-color: black;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-title h1{
+    color: #ffff;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+}
+.section-title p{
+    color: rgba(255, 255, 255, 0.5);;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 14px;
+}
+.habits{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.habits div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.habits img{
+    border-radius: 50%;
+}
+.habits h3{
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+}
+.habits p{
+    margin-top: 6px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    width: 231px;
+    text-align: center;
+}
+/* MObile Responsive */
+@media screen and (max-width: 576px) {
+    .habit-section{
+        height: auto;
+    }
+    .section-title h1{
+        font-size: 32px;
+        margin-top: 48px;
+    }
+    .section-title p{
+        font-size: 14px;
+    }
+    .habits{
+        flex-direction: column;
+        gap: 36px;
+    }
+}
+
+/* Run Section */
+main{
+    background-color: black;
+}
+.run-div{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    height: 380px;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.run-title{
+    margin-left: 24px;
+}
+.run-title h1{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+}
+.run-img{
+    width: 400px;
+    height: 312px;
+}
+.run-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+}
+.run-title p{
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 443px;
+}
+.run-title button{
+    margin-top: 34px;
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: 2px solid rgb(230, 83, 60);
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.run-title button:hover{
+    background: transparent;
+    border: 2px solid #ffff;
+}
+/* Mobile Version */
+@media screen and (max-width: 576px){
+    .run-div{
+        height: 540px;
+        flex-direction: column;
+     }
+}
