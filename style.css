@@ -202,7 +202,7 @@ nav{
         width: 90%;
     }
     header{
-        height: 156vh;
+        height: 985px;
     }
     .menu{
         display: none;
@@ -214,12 +214,12 @@ nav{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 140vh;
+        height: 850px;
     }
     .hero-img{
         height: 500px;
         width: 100%;
-        background-position: center right;
+        background-position: 70%;
     }
     .hero-text{
         width: 100%;
