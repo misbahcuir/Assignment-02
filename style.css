@@ -137,8 +137,8 @@ nav{
     position: absolute;
     width: 193px;
     height: 98px;
-    left: 1107px;
-    top: 260px;
+    left: 80%;
+    top: 30%;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -168,7 +168,7 @@ nav{
     width: 206px;
     height: 96px;
     left: 50%;
-    top: 556px;
+    top: 75%;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -408,7 +408,7 @@ main{
         margin-left: 0px;
     }
     .run-title h1{
-        font-size: 42px;
+        font-size: 32px;
         font-weight: 900;
         line-height: 120%;
     }
@@ -566,6 +566,16 @@ main{
         flex-direction: column;
         gap: 42px;
     }
+    .bmi-title{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .bmi-title h1{
+        font-size: 32px;
+    }
+    .bmi-title p{
+        width: 100%;
+    }
     .bmi-form{
         height: auto;
         width: auto;
@@ -709,6 +719,34 @@ main{
    border-radius: 10px;
    margin-top: 24px;
 }
+.socials{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+}
+.social-title h3{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-weight: 300;
+}
+.social-icons{
+    display: flex;
+    gap: 14px;
+}
+.social-icons i{
+    font-size: 24px;
+}
+.hline{
+    height: 400px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.6);;
+}
 .send-message{
     width: 40%;
 }
@@ -728,7 +766,7 @@ main{
     font-weight: 400;
 }
 .send-message textarea{
-    height: 150px;
+    height: 200px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     border: none;
@@ -752,6 +790,26 @@ main{
     color: #ffff;
     border: 2px solid white;
 }
+/* Mobile Version */
+@media screen and (max-width: 576px){
+    .contact{
+        flex-direction: column;
+    }
+    .map iframe{
+        width: 100%;
+     }
+    .hline{
+        height: 2px;
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .send-message{
+        width: 100%;
+    }
+}
+
+
 /* Footer */
 footer{
     background: rgb(26, 26, 26);
