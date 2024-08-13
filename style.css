@@ -204,6 +204,9 @@ nav{
     header{
         height: 985px;
     }
+    nav{
+        height: 135px;
+    }
     .menu{
         display: none;
     }
