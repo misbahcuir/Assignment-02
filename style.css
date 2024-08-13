@@ -366,12 +366,11 @@ main{
 .run-img{
     width: 400px;
     height: 312px;
-}
-.run-img img{
-    height: 100%;
-    width: 100%;
     border-radius: 18px;
+    background-image: url('./images/run.jpg');
+    background-position: 65% 30%;
 }
+
 .run-title p{
     margin-top: 14px;
     color: rgba(255, 255, 255, 0.5);
@@ -400,7 +399,273 @@ main{
 /* Mobile Version */
 @media screen and (max-width: 576px){
     .run-div{
+        margin-top: 60px;
         height: 540px;
         flex-direction: column;
+        gap: 30px;
      }
+     .run-title{
+        margin-left: 0px;
+    }
+    .run-title h1{
+        font-size: 42px;
+        font-weight: 900;
+        line-height: 120%;
+    }
+    .run-title p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        width: 100%;
+    }
+    .run-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        background-image: url('./images/run.jpg');
+        background-size: contain;
+        background-size: cover;
+    }
+    .run-title button{
+        margin-top: 24px;
+        width: 100%;
+        height: 54px;
+    }
+}
+
+/* BMI Calculator */
+
+.bmi-title{
+    width: 671px;
+    height: 119px;
+    margin: 80px auto;
+}
+.bmi-title h1{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+}
+.bmi-title p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 14px;
+}
+.bmi-calculator-section{
+    background: #222;
+    height: 490px;
+    padding: 50px 0;
+}
+.bmi-calculator{
+    display: flex;
+    justify-content: space-between ;
+}
+.bmi-chart h1{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 120%;
+}
+.bmi-chart table{
+    margin-top: 52px;
+}
+.bmi-chart table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+.bmi-chart th, td{
+    width: 150px;
+    height: 48px;
+}
+.bmi-chart th, td{
+    padding-left: 18px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-chart th{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffff;
+}
+.bmi-chart td{
+    font-size: 14px;
+    font-weight: 400;
+}
+.bmi-form{
+    width: 577px;
+    height: 386px;
+}
+.bmi-form h1{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 120%;
+}
+.bmi-form p{
+    margin-top: 14px;
+    margin-bottom: 34px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+}
+.bmi-1{
+    display: flex;
+    gap: 14px;
+}
+.bmi-2{
+    margin-top: 14px;
+    display: flex;
+    gap: 14px;
+}
+.bmi-form form input, select{
+    width: 282.5px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+}
+.bmi-form form select option{
+    color: rgba(255, 255, 255, 0.6);
+}
+.bmi-form form .activity{
+    width: 100%;
+    height: 48px;
+    margin-top: 14px;
+}
+.bmi-btn button{
+    margin-top: 34px;
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: 2px solid rgb(230, 83, 60);
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.bmi-btn button:hover{
+    background: transparent;
+    border: 2px solid #ffff;
+}
+
+/* Mobile Version */
+@media screen and (max-width: 576px){
+    .bmi-calculator-section{
+        height: auto;
+    }
+    .bmi-calculator{
+        flex-direction: column;
+        gap: 42px;
+    }
+    .bmi-form{
+        height: auto;
+        width: auto;
+    }
+    .bmi-form form input, select{
+        width: 50%;
+    }
+    .bmi-chart h1, .bmi-form h1{
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .bmi-chart table{
+        margin-top: 24px;
+    }
+}
+
+/* Team Section */
+.meet-team{
+    padding-bottom: 80px;
+}
+.team-title h1{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 80px;
+}
+.team-title p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 14px;
+    text-align: center;
+}
+.teams{
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.team-item{
+    height: 272px;
+    border-radius: 18px; 
+    padding: 20px;
+    
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.team-item h2{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.team-item p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+.item-1{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)), url('./images/trainer1.png');
+    background-size: cover;
+    background-position: center center;
+}
+.item-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)), url('./images/trainer2.png');
+    background-size: cover;
+    background-position: center center;
+}
+.item-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)), url('./images/trainer3.png');
+    background-size: cover;
+    background-position: center center;
+}
+.item-4{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)), url('./images/trainer4.png');
+    background-size: cover;
+    background-position: center center;
+}
+.item-5{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)), url('./images/trainer5.png');
+    background-size: cover;
+    background-position: center center;
+}
+.item-6{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)), url('./images/trainer6.png');
+    background-size: cover;
+    background-position: center center;
+}
+/* Mobile Version */
+@media screen and (max-width: 576px){
+    .team-title h1{
+        font-size: 32px;
+    }
+    .teams{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
